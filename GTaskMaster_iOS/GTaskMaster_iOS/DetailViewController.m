@@ -10,6 +10,7 @@
 #import "GTaskMasterManagedObjects.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *detailDescriptionTextView;
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
@@ -46,9 +47,11 @@
         for (GTaskMasterManagedTask *task in tasklist.tasks) {
             detailDescription = [detailDescription stringByAppendingFormat:@"%@\n", [task createLabelString]];
         }
-        
+        /*
         UITextView *textView = (UITextView *) self.view;
         textView.text = detailDescription;
+         */
+        self.detailDescriptionTextView.text = detailDescription;
     }
 }
 
@@ -90,4 +93,8 @@
     self.masterPopoverController = nil;
 }
 
+- (void)viewDidUnload {
+    [self setDetailDescriptionTextView:nil];
+    [super viewDidUnload];
+}
 @end
