@@ -35,13 +35,13 @@
 		65782CBF15B603EE007632E1 /* GTSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CA015B603EE007632E1 /* GTSyncManager.m */; };
 		65782CC015B603EE007632E1 /* LocalTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CA215B603EE007632E1 /* LocalTaskManager.m */; };
 		65782CC415B603EE007632E1 /* GTaskMasterIcon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65782CA915B603EE007632E1 /* GTaskMasterIcon.jpeg */; };
-		65782CC515B603EE007632E1 /* GTLQueryTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CAD15B603EE007632E1 /* GTLQueryTasks.m */; };
-		65782CC615B603EE007632E1 /* GTLServiceTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CAF15B603EE007632E1 /* GTLServiceTasks.m */; };
-		65782CC715B603EE007632E1 /* GTLTasksConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CB215B603EE007632E1 /* GTLTasksConstants.m */; };
-		65782CC815B603EE007632E1 /* GTLTasksTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CB415B603EE007632E1 /* GTLTasksTask.m */; };
-		65782CC915B603EE007632E1 /* GTLTasksTaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CB615B603EE007632E1 /* GTLTasksTaskList.m */; };
-		65782CCA15B603EE007632E1 /* GTLTasksTaskLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CB815B603EE007632E1 /* GTLTasksTaskLists.m */; };
-		65782CCB15B603EE007632E1 /* GTLTasksTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 65782CBA15B603EE007632E1 /* GTLTasksTasks.m */; };
+		C005C117167CAF070057976D /* GTLQueryTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C109167CAF070057976D /* GTLQueryTasks.m */; };
+		C005C118167CAF070057976D /* GTLServiceTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C10B167CAF070057976D /* GTLServiceTasks.m */; };
+		C005C119167CAF070057976D /* GTLTasksConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C10E167CAF070057976D /* GTLTasksConstants.m */; };
+		C005C11A167CAF070057976D /* GTLTasksTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C110167CAF070057976D /* GTLTasksTask.m */; };
+		C005C11B167CAF070057976D /* GTLTasksTaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C112167CAF070057976D /* GTLTasksTaskList.m */; };
+		C005C11C167CAF070057976D /* GTLTasksTaskLists.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C114167CAF070057976D /* GTLTasksTaskLists.m */; };
+		C005C11D167CAF070057976D /* GTLTasksTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = C005C116167CAF070057976D /* GTLTasksTasks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,21 +123,21 @@
 		65782CA115B603EE007632E1 /* LocalTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalTaskManager.h; sourceTree = "<group>"; };
 		65782CA215B603EE007632E1 /* LocalTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalTaskManager.m; sourceTree = "<group>"; };
 		65782CA915B603EE007632E1 /* GTaskMasterIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GTaskMasterIcon.jpeg; sourceTree = "<group>"; };
-		65782CAC15B603EE007632E1 /* GTLQueryTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryTasks.h; sourceTree = "<group>"; };
-		65782CAD15B603EE007632E1 /* GTLQueryTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryTasks.m; sourceTree = "<group>"; };
-		65782CAE15B603EE007632E1 /* GTLServiceTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServiceTasks.h; sourceTree = "<group>"; };
-		65782CAF15B603EE007632E1 /* GTLServiceTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServiceTasks.m; sourceTree = "<group>"; };
-		65782CB015B603EE007632E1 /* GTLTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTasks.h; sourceTree = "<group>"; };
-		65782CB115B603EE007632E1 /* GTLTasksConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTasksConstants.h; sourceTree = "<group>"; };
-		65782CB215B603EE007632E1 /* GTLTasksConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLTasksConstants.m; sourceTree = "<group>"; };
-		65782CB315B603EE007632E1 /* GTLTasksTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTasksTask.h; sourceTree = "<group>"; };
-		65782CB415B603EE007632E1 /* GTLTasksTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLTasksTask.m; sourceTree = "<group>"; };
-		65782CB515B603EE007632E1 /* GTLTasksTaskList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTasksTaskList.h; sourceTree = "<group>"; };
-		65782CB615B603EE007632E1 /* GTLTasksTaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLTasksTaskList.m; sourceTree = "<group>"; };
-		65782CB715B603EE007632E1 /* GTLTasksTaskLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTasksTaskLists.h; sourceTree = "<group>"; };
-		65782CB815B603EE007632E1 /* GTLTasksTaskLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLTasksTaskLists.m; sourceTree = "<group>"; };
-		65782CB915B603EE007632E1 /* GTLTasksTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLTasksTasks.h; sourceTree = "<group>"; };
-		65782CBA15B603EE007632E1 /* GTLTasksTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLTasksTasks.m; sourceTree = "<group>"; };
+		C005C108167CAF070057976D /* GTLQueryTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLQueryTasks.h; path = Tasks/Generated/GTLQueryTasks.h; sourceTree = "<group>"; };
+		C005C109167CAF070057976D /* GTLQueryTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLQueryTasks.m; path = Tasks/Generated/GTLQueryTasks.m; sourceTree = "<group>"; };
+		C005C10A167CAF070057976D /* GTLServiceTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLServiceTasks.h; path = Tasks/Generated/GTLServiceTasks.h; sourceTree = "<group>"; };
+		C005C10B167CAF070057976D /* GTLServiceTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLServiceTasks.m; path = Tasks/Generated/GTLServiceTasks.m; sourceTree = "<group>"; };
+		C005C10C167CAF070057976D /* GTLTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTasks.h; path = Tasks/Generated/GTLTasks.h; sourceTree = "<group>"; };
+		C005C10D167CAF070057976D /* GTLTasksConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTasksConstants.h; path = Tasks/Generated/GTLTasksConstants.h; sourceTree = "<group>"; };
+		C005C10E167CAF070057976D /* GTLTasksConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasksConstants.m; path = Tasks/Generated/GTLTasksConstants.m; sourceTree = "<group>"; };
+		C005C10F167CAF070057976D /* GTLTasksTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTasksTask.h; path = Tasks/Generated/GTLTasksTask.h; sourceTree = "<group>"; };
+		C005C110167CAF070057976D /* GTLTasksTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasksTask.m; path = Tasks/Generated/GTLTasksTask.m; sourceTree = "<group>"; };
+		C005C111167CAF070057976D /* GTLTasksTaskList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTasksTaskList.h; path = Tasks/Generated/GTLTasksTaskList.h; sourceTree = "<group>"; };
+		C005C112167CAF070057976D /* GTLTasksTaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasksTaskList.m; path = Tasks/Generated/GTLTasksTaskList.m; sourceTree = "<group>"; };
+		C005C113167CAF070057976D /* GTLTasksTaskLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTasksTaskLists.h; path = Tasks/Generated/GTLTasksTaskLists.h; sourceTree = "<group>"; };
+		C005C114167CAF070057976D /* GTLTasksTaskLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasksTaskLists.m; path = Tasks/Generated/GTLTasksTaskLists.m; sourceTree = "<group>"; };
+		C005C115167CAF070057976D /* GTLTasksTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLTasksTasks.h; path = Tasks/Generated/GTLTasksTasks.h; sourceTree = "<group>"; };
+		C005C116167CAF070057976D /* GTLTasksTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLTasksTasks.m; path = Tasks/Generated/GTLTasksTasks.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +304,7 @@
 				65782CA115B603EE007632E1 /* LocalTaskManager.h */,
 				65782CA215B603EE007632E1 /* LocalTaskManager.m */,
 				65782CA815B603EE007632E1 /* Resources */,
-				65782CAA15B603EE007632E1 /* Tasks */,
+				C005C106167CAEC40057976D /* Tasks */,
 			);
 			name = GTaskMaster_shared;
 			path = ../GTaskMaster_shared;
@@ -333,34 +333,34 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		65782CAA15B603EE007632E1 /* Tasks */ = {
+		C005C106167CAEC40057976D /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				65782CAB15B603EE007632E1 /* Generated */,
+				C005C11E167CAF1F0057976D /* Generated */,
 			);
-			path = Tasks;
+			name = Tasks;
 			sourceTree = "<group>";
 		};
-		65782CAB15B603EE007632E1 /* Generated */ = {
+		C005C11E167CAF1F0057976D /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				65782CAC15B603EE007632E1 /* GTLQueryTasks.h */,
-				65782CAD15B603EE007632E1 /* GTLQueryTasks.m */,
-				65782CAE15B603EE007632E1 /* GTLServiceTasks.h */,
-				65782CAF15B603EE007632E1 /* GTLServiceTasks.m */,
-				65782CB015B603EE007632E1 /* GTLTasks.h */,
-				65782CB115B603EE007632E1 /* GTLTasksConstants.h */,
-				65782CB215B603EE007632E1 /* GTLTasksConstants.m */,
-				65782CB315B603EE007632E1 /* GTLTasksTask.h */,
-				65782CB415B603EE007632E1 /* GTLTasksTask.m */,
-				65782CB515B603EE007632E1 /* GTLTasksTaskList.h */,
-				65782CB615B603EE007632E1 /* GTLTasksTaskList.m */,
-				65782CB715B603EE007632E1 /* GTLTasksTaskLists.h */,
-				65782CB815B603EE007632E1 /* GTLTasksTaskLists.m */,
-				65782CB915B603EE007632E1 /* GTLTasksTasks.h */,
-				65782CBA15B603EE007632E1 /* GTLTasksTasks.m */,
+				C005C108167CAF070057976D /* GTLQueryTasks.h */,
+				C005C109167CAF070057976D /* GTLQueryTasks.m */,
+				C005C10A167CAF070057976D /* GTLServiceTasks.h */,
+				C005C10B167CAF070057976D /* GTLServiceTasks.m */,
+				C005C10C167CAF070057976D /* GTLTasks.h */,
+				C005C10D167CAF070057976D /* GTLTasksConstants.h */,
+				C005C10E167CAF070057976D /* GTLTasksConstants.m */,
+				C005C10F167CAF070057976D /* GTLTasksTask.h */,
+				C005C110167CAF070057976D /* GTLTasksTask.m */,
+				C005C111167CAF070057976D /* GTLTasksTaskList.h */,
+				C005C112167CAF070057976D /* GTLTasksTaskList.m */,
+				C005C113167CAF070057976D /* GTLTasksTaskLists.h */,
+				C005C114167CAF070057976D /* GTLTasksTaskLists.m */,
+				C005C115167CAF070057976D /* GTLTasksTasks.h */,
+				C005C116167CAF070057976D /* GTLTasksTasks.m */,
 			);
-			path = Generated;
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,13 +483,13 @@
 				65782CBE15B603EE007632E1 /* GTaskMasterManagedTaskList.m in Sources */,
 				65782CBF15B603EE007632E1 /* GTSyncManager.m in Sources */,
 				65782CC015B603EE007632E1 /* LocalTaskManager.m in Sources */,
-				65782CC515B603EE007632E1 /* GTLQueryTasks.m in Sources */,
-				65782CC615B603EE007632E1 /* GTLServiceTasks.m in Sources */,
-				65782CC715B603EE007632E1 /* GTLTasksConstants.m in Sources */,
-				65782CC815B603EE007632E1 /* GTLTasksTask.m in Sources */,
-				65782CC915B603EE007632E1 /* GTLTasksTaskList.m in Sources */,
-				65782CCA15B603EE007632E1 /* GTLTasksTaskLists.m in Sources */,
-				65782CCB15B603EE007632E1 /* GTLTasksTasks.m in Sources */,
+				C005C117167CAF070057976D /* GTLQueryTasks.m in Sources */,
+				C005C118167CAF070057976D /* GTLServiceTasks.m in Sources */,
+				C005C119167CAF070057976D /* GTLTasksConstants.m in Sources */,
+				C005C11A167CAF070057976D /* GTLTasksTask.m in Sources */,
+				C005C11B167CAF070057976D /* GTLTasksTaskList.m in Sources */,
+				C005C11C167CAF070057976D /* GTLTasksTaskLists.m in Sources */,
+				C005C11D167CAF070057976D /* GTLTasksTasks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
