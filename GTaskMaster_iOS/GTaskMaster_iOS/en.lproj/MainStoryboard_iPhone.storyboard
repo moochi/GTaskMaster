@@ -71,24 +71,25 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiq-mc-3YK">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HLM-Mq-Yog">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="21" id="RYh-3Y-9uS"/>
+                                    <outlet property="delegate" destination="21" id="bAF-WO-9lM"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jiq-mc-3YK" firstAttribute="top" secondItem="22" secondAttribute="top" type="default" id="cQg-u2-aNe"/>
-                            <constraint firstItem="jiq-mc-3YK" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" type="default" id="ksO-4V-oa1"/>
-                            <constraint firstItem="jiq-mc-3YK" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" type="default" id="p1D-0A-lbW"/>
-                            <constraint firstItem="jiq-mc-3YK" firstAttribute="leading" secondItem="22" secondAttribute="leading" type="default" id="w1v-1i-ubp"/>
+                            <constraint firstItem="HLM-Mq-Yog" firstAttribute="leading" secondItem="22" secondAttribute="leading" type="default" id="BrV-UO-2YP"/>
+                            <constraint firstItem="HLM-Mq-Yog" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" type="default" id="YeT-9L-x96"/>
+                            <constraint firstItem="HLM-Mq-Yog" firstAttribute="top" secondItem="22" secondAttribute="top" type="default" id="htC-d3-74n"/>
+                            <constraint firstItem="HLM-Mq-Yog" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" type="default" id="lsz-gl-co7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="26"/>
                     <connections>
-                        <outlet property="detailDescriptionTextView" destination="jiq-mc-3YK" id="gbu-ab-4rp"/>
+                        <outlet property="detailDescriptionTableView" destination="HLM-Mq-Yog" id="piE-ME-ZiE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
@@ -96,6 +97,24 @@
             <point key="canvasLocation" x="902" y="64"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="detailDescriptionTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailViewController" candidateClass="DetailViewController"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

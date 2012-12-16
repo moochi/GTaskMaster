@@ -23,19 +23,20 @@
         <scene sceneID="16">
             <objects>
                 <viewController storyboardIdentifier="" title="Tasks" id="4" customClass="DetailViewController" sceneMemberID="viewController">
-                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Choose a task list!" id="5Lz-fO-25l">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8eM-Hc-wlS">
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
-                    </textView>
+                        <connections>
+                            <outlet property="dataSource" destination="4" id="EVh-1F-arv"/>
+                            <outlet property="delegate" destination="4" id="nLu-k1-Jei"/>
+                        </connections>
+                    </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Tasks" id="53"/>
                     <connections>
-                        <outlet property="detailDescriptionTextView" destination="5Lz-fO-25l" id="ybx-MF-lZf"/>
+                        <outlet property="detailDescriptionTableView" destination="8eM-Hc-wlS" id="IRe-jc-kdH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
@@ -120,6 +121,7 @@
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="detailDescriptionTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="detailDescriptionTextView" candidateClass="UITextView"/>
             </relationships>
         </class>

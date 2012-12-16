@@ -10,7 +10,7 @@
 #import "GTaskMasterManagedObjects.h"
 
 @interface DetailViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *detailDescriptionTextView;
+
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
@@ -47,11 +47,8 @@
         for (GTaskMasterManagedTask *task in tasklist.tasks) {
             detailDescription = [detailDescription stringByAppendingFormat:@"%@\n", [task createLabelString]];
         }
-        /*
-        UITextView *textView = (UITextView *) self.view;
-        textView.text = detailDescription;
-         */
-        self.detailDescriptionTextView.text = detailDescription;
+        //self.detailDescriptionTextView.text = detailDescription;
+     
     }
 }
 
@@ -77,6 +74,38 @@
     }
 }
 
+#pragma mark - Table View
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    GTaskMasterManagedTaskList *tasklist = self.detailItem;
+    return [tasklist.tasks count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    GTaskMasterManagedTask *task = [((GTaskMasterManagedTaskList *)self.detailItem).tasks objectAtIndex:indexPath.row];
+    [cell.textLabel setText:[task createLabelString]];
+    NSLog(@"%d:%@",indexPath.row,[task createLabelString]);
+    return cell;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 #pragma mark - Split view
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
@@ -94,7 +123,7 @@
 }
 
 - (void)viewDidUnload {
-    [self setDetailDescriptionTextView:nil];
+    [self setDetailDescriptionTableView:nil];
     [super viewDidUnload];
 }
 @end

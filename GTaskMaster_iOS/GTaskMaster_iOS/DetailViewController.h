@@ -6,8 +6,9 @@
 //  Copyright (c) 2012 Kurt Hardin. All rights reserved.
 //
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate,UITableViewDataSource,UITableViewDelegate,NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) id detailItem;
+@property (weak, nonatomic) IBOutlet UITableView *detailDescriptionTableView;
 
 @end
