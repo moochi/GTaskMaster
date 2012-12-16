@@ -15,11 +15,11 @@
 #define SAVE_AUTH_TOKEN                 1
 
 // Keychain item name for saving the user's authentication information
-#define kKeychainItemName @"GTaskMaster (Google Tasks)"
+#define kKeychainItemName @"TestTasksApp"
 
 // Client ID and secret
-#define kMyClientID @"646051176189.apps.googleusercontent.com"
-#define kMyClientSecret @"k477udZsWc6iWd44D94f7tp5"
+#define kMyClientID @"330215408733.apps.googleusercontent.com"
+#define kMyClientSecret @"Bzdh7-ZdL-tPQLtdwx_6ocLe"
 
 //Debug
 #ifdef DEBUG
